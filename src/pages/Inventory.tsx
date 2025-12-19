@@ -66,7 +66,7 @@ const mockItems: InventoryItem[] = [
 ];
 
 export const Inventory: React.FC = () => {
-  const [items, setItems] = useState<InventoryItem[]>(mockItems);
+  const [items] = useState<InventoryItem[]>(mockItems);
   const [openDialog, setOpenDialog] = useState(false);
   const [selectedItem, setSelectedItem] = useState<InventoryItem | null>(null);
 

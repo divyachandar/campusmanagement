@@ -71,7 +71,7 @@ const mockStaff: Staff[] = [
 ];
 
 export const HR: React.FC = () => {
-  const [staff, setStaff] = useState<Staff[]>(mockStaff);
+  const [staff] = useState<Staff[]>(mockStaff);
   const [openDialog, setOpenDialog] = useState(false);
   const [selectedStaff, setSelectedStaff] = useState<Staff | null>(null);
 

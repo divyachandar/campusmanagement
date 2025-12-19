@@ -65,7 +65,7 @@ const mockStudents: Student[] = [
 ];
 
 export const Students: React.FC = () => {
-  const [students, setStudents] = useState<Student[]>(mockStudents);
+  const [students] = useState<Student[]>(mockStudents);
   const [searchTerm, setSearchTerm] = useState('');
   const [openDialog, setOpenDialog] = useState(false);
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);

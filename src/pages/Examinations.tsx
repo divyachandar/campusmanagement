@@ -24,7 +24,6 @@ import {
   Add,
   Edit,
   Delete,
-  CalendarToday,
 } from '@mui/icons-material';
 import { Exam } from '@/types';
 import { format } from 'date-fns';
@@ -73,7 +72,7 @@ const examTypeColors: Record<string, 'default' | 'primary' | 'secondary' | 'succ
 };
 
 export const Examinations: React.FC = () => {
-  const [exams, setExams] = useState<Exam[]>(mockExams);
+  const [exams] = useState<Exam[]>(mockExams);
   const [openDialog, setOpenDialog] = useState(false);
   const [selectedExam, setSelectedExam] = useState<Exam | null>(null);
 

@@ -4,8 +4,6 @@ import {
   Typography,
   Paper,
   Grid,
-  Card,
-  CardContent,
   Button,
   MenuItem,
   TextField,
@@ -14,10 +12,6 @@ import {
 } from '@mui/material';
 import {
   Download,
-  Assessment,
-  People,
-  Payment,
-  School,
 } from '@mui/icons-material';
 import {
   BarChart,
@@ -149,7 +143,7 @@ export const Reports: React.FC = () => {
                     fill="#8884d8"
                     dataKey="value"
                   >
-                    {studentDistribution.map((entry, index) => (
+                    {studentDistribution.map((_entry, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>

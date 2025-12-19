@@ -24,9 +24,7 @@ import {
 } from '@mui/material';
 import {
   Add,
-  Payment,
   Receipt,
-  Search,
 } from '@mui/icons-material';
 import { FeePayment, FeeStructure } from '@/types';
 import { format } from 'date-fns';
@@ -81,7 +79,7 @@ const statusColors: Record<string, 'success' | 'warning' | 'error'> = {
 };
 
 export const Fees: React.FC = () => {
-  const [payments, setPayments] = useState<FeePayment[]>(mockPayments);
+  const [payments] = useState<FeePayment[]>(mockPayments);
   const [feeStructures] = useState<FeeStructure[]>(mockFeeStructures);
   const [openPaymentDialog, setOpenPaymentDialog] = useState(false);
   const [openReceiptDialog, setOpenReceiptDialog] = useState(false);

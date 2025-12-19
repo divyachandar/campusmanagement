@@ -12,7 +12,6 @@ import {
   School,
   Assessment,
   Payment,
-  TrendingUp,
   Assignment,
 } from '@mui/icons-material';
 import { useAuth } from '@/contexts/AuthContext';
@@ -205,7 +204,7 @@ export const Dashboard: React.FC = () => {
                   fill="#8884d8"
                   dataKey="value"
                 >
-                  {courseDistribution.map((entry, index) => (
+                  {courseDistribution.map((_entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                   ))}
                 </Pie>

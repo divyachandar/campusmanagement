@@ -8,11 +8,8 @@ import {
   Button,
   Switch,
   FormControlLabel,
-  Divider,
   Tabs,
   Tab,
-  Card,
-  CardContent,
   MenuItem,
 } from '@mui/material';
 import {

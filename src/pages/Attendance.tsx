@@ -20,7 +20,6 @@ import {
 import {
   CheckCircle,
   Cancel,
-  Schedule,
   PersonAdd,
 } from '@mui/icons-material';
 import { Attendance as AttendanceType } from '@/types';
