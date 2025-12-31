@@ -36,24 +36,6 @@ npm run dev
 npm run build
 ```
 
-### Deployment
-
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
-
-**Quick Deploy to Vercel:**
-```bash
-npm install -g vercel
-vercel login
-vercel --prod
-```
-
-**Quick Deploy to Netlify:**
-```bash
-npm install -g netlify-cli
-netlify login
-netlify deploy --prod --dir=dist
-```
-
 ## Tech Stack
 
 - React 18
